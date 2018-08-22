@@ -29,3 +29,7 @@
 - Replace separator / by any other character not used in the find or replace patterns, e.g., #:
 
 `sed 's#{{find}}#{{replace}}#' {{filename}}`
+
+- Get the nth line of a file:
+
+`sed '{{n}}q;d' {{filename}}`
