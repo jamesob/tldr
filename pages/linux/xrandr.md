@@ -21,3 +21,7 @@
 - Disable the VGA1 output:
 
 `xrandr --output {{VGA1}} --off`
+
+- Flip the ordering of the outputs:
+
+`xrandr --output DP-0 --left-of DP-2`
