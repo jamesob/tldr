@@ -3,6 +3,10 @@
 > Lists open files and the corresponding processes.
 > Note: Root privileges (or sudo) is required to list files opened by others.
 
+- Find all TCP connections associated with a process:
+
+`lsof -a -itcp -p $(pidof {{name_of_process}}`
+
 - Find the processes that have a given file open:
 
 `lsof {{path/to/file}}`
